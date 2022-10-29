@@ -1,7 +1,7 @@
 {
   "name": "garcel-code",
   "private": true,
-  "version": "0.0.002",
+  "version": "0.0.010",
   "type": "module",
   "scripts": {
     "dev": "vite",

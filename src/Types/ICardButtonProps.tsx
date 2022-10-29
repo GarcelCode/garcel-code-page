@@ -1,6 +1,7 @@
 import { MouseEventHandler } from "react";
 
 export interface ICardButtonProps{
-    text: String,
+    text: String
     action: MouseEventHandler<HTMLButtonElement>
+    visible: boolean
 }

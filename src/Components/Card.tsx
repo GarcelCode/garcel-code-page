@@ -22,6 +22,7 @@ export default function Card() {
         <section className="flex justify-around mt-3">
           <CardButton
             text="Skills"
+            visible={knowledgeVisible}
             action={() => {
               setKnowledgeVisible(!knowledgeVisible);
               setContactVisible(false);
@@ -29,6 +30,7 @@ export default function Card() {
           />
           <CardButton
             text="Contact"
+            visible={contactVisible}
             action={() => {
               setContactVisible(!contactVisible);
               setKnowledgeVisible(false);
