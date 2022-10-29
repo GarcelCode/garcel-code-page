@@ -1,7 +1,7 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler } from 'react'
 
-export interface ICardButtonProps{
-    text: String
-    action: MouseEventHandler<HTMLButtonElement>
-    visible: boolean
+export interface ICardButtonProps {
+  text: String
+  action: MouseEventHandler<HTMLButtonElement>
+  visible: boolean
 }
