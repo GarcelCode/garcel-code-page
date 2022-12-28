@@ -4,6 +4,7 @@ export default function CardHeader() {
       <h1 className="-mt-3 text-[2rem] sm:text-3xl text-gc-titles font-bold">
         Garcel Code
       </h1>
+      <img src="/images/profile.jpg" className="w-32 m-auto rounded-full" />
       <p className="text-center text-gc-text text-sm italic">
         Front-End Web Developer
       </p>

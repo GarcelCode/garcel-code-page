@@ -7,7 +7,7 @@ import {
   SiTailwindcss,
   SiReact,
   SiXampp,
-  SiRust,
+  SiNextdotjs,
 } from 'react-icons/si'
 
 export const skillsList = [
@@ -56,7 +56,7 @@ export const skillsList = [
 export const learningList = [
   {
     id: 0,
-    name: 'Rust',
-    icon: <SiRust />,
+    name: 'NextJS',
+    icon: <SiNextdotjs />,
   },
 ]
