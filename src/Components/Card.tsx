@@ -11,9 +11,9 @@ export default function Card() {
   return (
     <div className="animate-slideUp text-center">
       <div
-        className={`bg-gc-secondary p-5 rounded-md animate-slideUp h-[18.5rem] w-[19rem] sm:max-w-[23rem] duration-500 ease-out ${
-          knowledgeVisible ? 'h-[34.8rem] w-[19rem]' : ''
-        } ${contactVisible ? 'h-[31.5rem] w-[18rem]' : ''}`}
+        className={`bg-gc-secondary p-5 rounded-md animate-slideUp h-[20.5rem] w-[19rem] sm:max-w-[23rem] duration-500 ease-out ${
+          knowledgeVisible ? 'h-[36.8rem] w-[19rem]' : ''
+        } ${contactVisible ? 'h-[33.5rem] w-[18rem]' : ''}`}
       >
         <CardHeader />
 
