@@ -1,29 +1,24 @@
 import { skillsList, learningList } from '../Data/SkillsList'
+import styles from './SkillsViewStyle.module.scss'
 
 export default function Knowledge() {
   return (
-    <article className="animate-fadeIn opacity-0">
-      <p className="text-gc-text text-center my-3">I have experience using</p>
+    <article className={styles.skillsCardContainer}>
+      <p className={styles.skillsText}>I have experience using</p>
       <>
-        <ul className="grid grid-cols-auto gap-5">
+        <ul className={styles.skillsIconsContainer}>
           {skillsList.map((el) => (
-            <li
-              key={el.id}
-              className="flex justify-center text-sky-300 text-5xl animate-appear"
-            >
+            <li key={el.id} className={styles.skillsIcon}>
               {el.icon}
             </li>
           ))}
         </ul>
       </>
-      <p className="text-gc-text text-center my-3">Learning</p>
+      <p className={styles.skillsText}>Learning</p>
       <>
-        <ul className="grid grid-cols-auto gap-5">
+        <ul className={styles.skillsIconsContainer}>
           {learningList.map((el) => (
-            <li
-              key={el.id}
-              className="flex justify-center text-sky-300 text-5xl animate-appear"
-            >
+            <li key={el.id} className={styles.skillsIcon}>
               {el.icon}
             </li>
           ))}

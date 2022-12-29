@@ -1,0 +1,22 @@
+.contactCardContainer {
+  @apply animate-fadeIn opacity-0;
+}
+
+.socialMediaText {
+  @apply text-gc-text text-center my-3;
+}
+
+.socialMediaContainer {
+  @apply flex items-center justify-center gap-[0.5rem] text-gc-text mb-3 duration-300;
+  &:hover {
+    @apply text-sky-300 scale-110 cursor-pointer;
+  }
+}
+
+.socialMediaIcon {
+  @apply flex justify-center text-3xl min-w-[2.5rem];
+}
+
+.socialMediaName {
+  @apply min-w-[5rem];
+}

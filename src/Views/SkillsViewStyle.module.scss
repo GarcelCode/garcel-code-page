@@ -1,0 +1,12 @@
+.skillsCardContainer {
+  @apply animate-fadeIn opacity-0;
+}
+.skillsText {
+  @apply text-gc-text text-center my-3;
+}
+.skillsIconsContainer {
+  @apply grid grid-cols-auto gap-5;
+}
+.skillsIcon {
+  @apply flex justify-center text-sky-300 text-5xl animate-appear;
+}
