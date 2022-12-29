@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GarcelCode's portfolio, front end web developer." />
-    <meta name="keywords" content="GarcelCode, FrontEnd, Portfolio, Developer, React"/>
+    <meta
+      name="description"
+      content="GarcelCode's portfolio, front end web developer."
+    />
+    <meta
+      name="keywords"
+      content="GarcelCode, FrontEnd, Portfolio, Developer, React"
+    />
     <meta name="author" content="GarcelCode" />
     <title>Garcel Code</title>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-GQE95TZV8P"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-GQE95TZV8P')
+  </script>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
