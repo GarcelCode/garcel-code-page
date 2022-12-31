@@ -1,5 +1,5 @@
 import { contactList } from '../Data/ContactList'
-import styles from './ContactViewStyle.module.scss'
+import styles from './Styles/ContactViewStyle.module.scss'
 
 export default function Contact() {
   return (

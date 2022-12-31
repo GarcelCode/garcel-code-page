@@ -1,16 +1,21 @@
 import { ICardButtonProps } from '../Types/ICardButtonProps'
+import Styles from './Styles/CardButtonStyle.module.scss'
 
 export default function CardButton({
   text,
   action,
   visible,
 }: ICardButtonProps) {
+  const buttonStyles = (visible: boolean) => {
+    if (visible) {
+      return Styles.buttonSelected
+    }
+    return null
+  }
   return (
     <button
       onClick={action}
-      className={`border-2 border-gc-titles p-1 rounded-md text-gc-text hover:bg-gc-titles hover:text-gc-primary min-w-[7rem] duration-500 ${
-        visible ? `bg-gc-titles text-gc-primary` : null
-      }`}
+      className={`${Styles.button} ${buttonStyles(visible)}`}
     >
       {text}
     </button>

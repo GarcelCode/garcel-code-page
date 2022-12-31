@@ -3,23 +3,38 @@ import Contact from '../Views/ContactView'
 import Knowledge from '../Views/SkillsView'
 import CardButton from './CardButton'
 import CardHeader from './CardHeader'
+import Styles from './Styles/CardStyle.module.scss'
 
 export default function Card() {
   const [knowledgeVisible, setKnowledgeVisible] = useState(false)
   const [contactVisible, setContactVisible] = useState(false)
 
+  const cardContainerStyles = (
+    knowledgeVisible: boolean,
+    contactVisible: boolean
+  ) => {
+    if (knowledgeVisible) {
+      return Styles.knowledgeCardContainer
+    } else if (contactVisible) {
+      return Styles.contactCardContainer
+    }
+
+    return ''
+  }
+
   return (
-    <div className="animate-slideUp text-center">
+    <div className={Styles.mainContainer}>
       <div
-        className={`bg-gc-secondary p-5 rounded-md animate-slideUp h-[20.5rem] w-[19rem] sm:max-w-[23rem] duration-500 ease-out ${
-          knowledgeVisible ? 'h-[36.8rem] w-[19rem]' : ''
-        } ${contactVisible ? 'h-[33.5rem] w-[18rem]' : ''}`}
+        className={`${Styles.cardContainer} ${cardContainerStyles(
+          knowledgeVisible,
+          contactVisible
+        )}`}
       >
         <CardHeader />
 
         <hr />
 
-        <section className="flex justify-around mt-3">
+        <section className={Styles.buttonContainer}>
           <CardButton
             text="Skills"
             visible={knowledgeVisible}
@@ -41,9 +56,7 @@ export default function Card() {
         {knowledgeVisible && <Knowledge />}
         {contactVisible && <Contact />}
       </div>
-      <footer className="mt-3 text-gray-400 text-xs -z-10">
-        GarcelCode 2022
-      </footer>
+      <footer className={Styles.footer}>GarcelCode 2022</footer>
     </div>
   )
 }

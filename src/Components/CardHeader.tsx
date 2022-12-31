@@ -1,20 +1,20 @@
+import Styles from './Styles/CardHeaderStyle.module.scss'
+
 export default function CardHeader() {
   return (
     <>
-      <h1 className="-mt-3 text-[2rem] sm:text-3xl text-gc-titles font-bold">
-        Garcel Code
-      </h1>
+      <h1 className={Styles.title}>Garcel Code</h1>
       <img
         src="/images/profile.webp"
         alt="profile_pic"
         width="128px"
         height="128px"
-        className="m-auto rounded-full my-4"
+        className={Styles.img}
       />
-      <p className="text-center text-gc-text text-sm italic">
+      <p className={`${Styles.textDescription} italic`}>
         Front-End Web Developer
       </p>
-      <p className="text-center text-gc-text text-sm mb-3">
+      <p className={`${Styles.textDescription} mb-3`}>
         Currently working at <b>ezaudita</b>
       </p>
     </>

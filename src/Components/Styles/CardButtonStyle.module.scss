@@ -1,0 +1,10 @@
+.button {
+  @apply border-2 border-gc-titles p-1 rounded-md text-gc-text min-w-[7rem] duration-500;
+  &:hover {
+    @apply bg-gc-titles text-gc-primary;
+  }
+}
+
+.buttonSelected {
+  @apply bg-gc-titles text-gc-primary;
+}

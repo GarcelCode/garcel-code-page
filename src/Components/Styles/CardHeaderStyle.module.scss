@@ -1,0 +1,11 @@
+.title {
+  @apply -mt-3 text-[2rem] sm:text-3xl text-gc-titles font-bold;
+}
+
+.img {
+  @apply m-auto rounded-full my-4;
+}
+
+.textDescription {
+  @apply text-center text-gc-text text-sm;
+}

@@ -1,5 +1,5 @@
 import { skillsList, learningList } from '../Data/SkillsList'
-import styles from './SkillsViewStyle.module.scss'
+import styles from './Styles/SkillsViewStyle.module.scss'
 
 export default function Knowledge() {
   return (
